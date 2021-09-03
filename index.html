@@ -33,7 +33,7 @@
       </div>
 
       <!-- New Chat Form -->
-      <div class="new-chat my-3">
+      <form class="new-chat my-3">
         <div class="input-group">
           <div class="input-group-prepend">
             <div class="input-group-text">Your message:</div>
@@ -43,7 +43,7 @@
             <input type="submit" class="btn" value="send" />
           </div>
         </div>
-      </div>
+      </form>
 
       <!-- Update Name Form -->
       <form class="new-name my-3">
@@ -53,19 +53,14 @@
           </div>
           <input type="text" id="name" class="form-control" required />
           <div class="input-group-append">
-            <input type="text" class="btn" value="update" />
+            <input type="submit" class="btn" value="update" />
           </div>
         </div>
+        <div class="update-mssg"></div>
       </form>
-      <div class="update-mssg"></div>
     </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"
-      integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
     <script>
